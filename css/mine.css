@@ -1,0 +1,349 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Condensed:ital@1&display=swap');
+/* font-family: 'Playfair Display',
+serif;
+: font-family: 'Roboto Condensed',
+sans-serif; */
+
+:root {
+    --lg-font: 'Playfair Display', serif;
+    --sm-font: 'Roboto Condensed', sans-serif;
+    --pink: #e5345b;
+    --black: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body html {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+}
+
+#div123 {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center111 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black);
+}
+
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, rgba(254, 255, 255, 0.686), #f400f8);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+
+
+
+
+body {
+    font-family: var(--sm-font);
+    background-color: rgb(206, 206, 206);
+}
+
+
+/* button */
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary {
+    color: var(--pink) !important;
+}
+
+/* navbar */
+.navbar {
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header {
+    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff !important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink) !important;
+}
+
+/* title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+    background-color: var(--pink) !important;
+    color: #fff !important;
+    border-color: var(--pink) !important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff !important;
+}
+
+.collection-img span {
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.colletion-img img {
+    border: 1px solid var(--black);
+    border-radius: 20px;
+
+}
+
+.collection-img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.collection-img:hover {
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.8996);
+}
+
+
+
+/* special */
+.special-img span {
+    top: 20px;
+    right: 20px;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+
+.special-img img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+}
+
+.special-img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    /* border: 1px solid var(--black);
+    border-radius: 20px; */
+}
+
+.special-img:hover img {
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(.5);
+    transform: scale(.8996);
+}
+
+/*  blog offer 1 */
+
+#offers {
+    background: url(/images/offer_img.jpg ) center / cover no-repeat;
+}
+
+#offers .row {
+    min-height: 60vh;
+
+}
+
+.offer-content span {
+    font-size: 28px;
+}
+
+.offer-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.offer-content .btn {
+    border-color: transparent !important;
+}
+
+/* end offers */
+
+#about {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+.popular {
+    border-radius: 10%;
+}
+
+/* * newsletter */
+
+
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink) !important;
+}
